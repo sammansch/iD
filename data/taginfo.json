@@ -1398,14 +1398,14 @@
     {
       "key": "barrier",
       "value": "kerb",
-      "description": "Kerb",
+      "description": "Curb",
       "object_types": ["node", "way"],
       "icon_url": "https://raw.githubusercontent.com/mapbox/maki/master/icons/wheelchair-15.svg?sanitize=true"
     },
     {
       "key": "kerb",
       "value": "lowered",
-      "description": "Lowered Kerb",
+      "description": "Lowered Curb",
       "object_types": ["node", "way"],
       "icon_url": "https://raw.githubusercontent.com/mapbox/maki/master/icons/wheelchair-15.svg?sanitize=true"
     },
@@ -4414,9 +4414,58 @@
     },
     {
       "key": "piste:type",
-      "description": "Piste/Ski Trail",
-      "object_types": ["node", "way", "area"],
+      "value": "downhill",
+      "description": "Downhill Piste/Ski Run, Type",
+      "object_types": ["way", "area"],
       "icon_url": "https://raw.githubusercontent.com/mapbox/maki/master/icons/skiing-15.svg?sanitize=true"
+    },
+    {
+      "key": "piste:type",
+      "value": "hike",
+      "description": "Snowshoeing or Winter Hiking Trail, Type",
+      "object_types": ["way", "area"],
+      "icon_url": "https://raw.githubusercontent.com/openstreetmap/iD/master/svg/fontawesome/fas-snowflake.svg?sanitize=true"
+    },
+    {
+      "key": "piste:type",
+      "value": "ice_skate",
+      "description": "Ice Skating Piste, Type",
+      "object_types": ["way", "area"],
+      "icon_url": "https://raw.githubusercontent.com/openstreetmap/iD/master/svg/fontawesome/fas-snowflake.svg?sanitize=true"
+    },
+    {
+      "key": "piste:type",
+      "value": "nordic",
+      "description": "Nordic or Crosscountry Piste/Ski Trail, Type",
+      "object_types": ["way", "area"],
+      "icon_url": "https://raw.githubusercontent.com/mapbox/maki/master/icons/skiing-15.svg?sanitize=true"
+    },
+    {
+      "key": "piste:type",
+      "description": "Winter Sport Trails",
+      "object_types": ["way", "area"],
+      "icon_url": "https://raw.githubusercontent.com/mapbox/maki/master/icons/skiing-15.svg?sanitize=true"
+    },
+    {
+      "key": "piste:type",
+      "value": "skitour",
+      "description": "Ski Touring Trail, Type",
+      "object_types": ["way", "area"],
+      "icon_url": "https://raw.githubusercontent.com/mapbox/maki/master/icons/skiing-15.svg?sanitize=true"
+    },
+    {
+      "key": "piste:type",
+      "value": "sled",
+      "description": "Sled Piste, Type",
+      "object_types": ["way", "area"],
+      "icon_url": "https://raw.githubusercontent.com/openstreetmap/iD/master/svg/fontawesome/fas-snowflake.svg?sanitize=true"
+    },
+    {
+      "key": "piste:type",
+      "value": "sleigh",
+      "description": "Sleigh Piste, Type",
+      "object_types": ["way", "area"],
+      "icon_url": "https://raw.githubusercontent.com/openstreetmap/iD/master/svg/fontawesome/fas-snowflake.svg?sanitize=true"
     },
     {
       "key": "place",
@@ -4975,13 +5024,13 @@
     {
       "key": "seamark:buoy_lateral:colour",
       "value": "green",
-      "description": "Green Buoy, Colour",
+      "description": "Green Buoy, Color",
       "object_types": ["node"]
     },
     {
       "key": "seamark:buoy_lateral:colour",
       "value": "red",
-      "description": "Red Buoy, Colour",
+      "description": "Red Buoy, Color",
       "object_types": ["node"]
     },
     {
@@ -6640,6 +6689,7 @@
     {"key": "castle_type", "description": "Type"},
     {"key": "clothes", "description": "Clothes"},
     {"key": "collection_times", "description": "Collection Times"},
+    {"key": "colour", "description": "Color"},
     {"key": "comment", "description": "Changeset Comment"},
     {"key": "communication:", "description": "Communication Types"},
     {"key": "construction", "description": "Type"},
@@ -7092,13 +7142,6 @@
     },
     {"key": "piste:grooming", "value": "scooter", "description": "Grooming"},
     {"key": "piste:grooming", "value": "skating", "description": "Grooming"},
-    {"key": "piste:type", "value": "downhill", "description": "Type"},
-    {"key": "piste:type", "value": "nordic", "description": "Type"},
-    {"key": "piste:type", "value": "skitour", "description": "Type"},
-    {"key": "piste:type", "value": "sled", "description": "Type"},
-    {"key": "piste:type", "value": "hike", "description": "Type"},
-    {"key": "piste:type", "value": "sleigh", "description": "Type"},
-    {"key": "piste:type", "value": "ice_skate", "description": "Type"},
     {"key": "piste:type", "value": "snow_park", "description": "Type"},
     {"key": "piste:type", "value": "playground", "description": "Type"},
     {"key": "piste:type", "value": "connection", "description": "Type"},
@@ -7201,17 +7244,17 @@
     {
       "key": "seamark:beacon_lateral:colour",
       "value": "red",
-      "description": "Colour"
+      "description": "Color"
     },
     {
       "key": "seamark:beacon_lateral:colour",
       "value": "green",
-      "description": "Colour"
+      "description": "Color"
     },
     {
       "key": "seamark:beacon_lateral:colour",
       "value": "grey",
-      "description": "Colour"
+      "description": "Color"
     },
     {"key": "seamark:beacon_lateral:shape", "description": "Shape"},
     {
@@ -7287,32 +7330,32 @@
     {
       "key": "seamark:buoy_lateral:colour",
       "value": "red;white;red;white",
-      "description": "Colour"
+      "description": "Color"
     },
     {
       "key": "seamark:buoy_lateral:colour",
       "value": "green;white;green;white",
-      "description": "Colour"
+      "description": "Color"
     },
     {
       "key": "seamark:buoy_lateral:colour",
       "value": "red;green;red",
-      "description": "Colour"
+      "description": "Color"
     },
     {
       "key": "seamark:buoy_lateral:colour",
       "value": "green;red;green",
-      "description": "Colour"
+      "description": "Color"
     },
     {
       "key": "seamark:buoy_lateral:colour",
       "value": "white",
-      "description": "Colour"
+      "description": "Color"
     },
     {
       "key": "seamark:buoy_lateral:colour",
       "value": "yellow",
-      "description": "Colour"
+      "description": "Color"
     },
     {"key": "seamark:buoy_lateral:shape", "description": "Shape"},
     {

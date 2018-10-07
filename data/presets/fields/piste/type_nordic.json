@@ -1,0 +1,12 @@
+{
+    "key": "piste:type",
+    "type": "typeCombo",
+    "label": "Type",
+    "strings": {
+        "options": {
+            "nordic": "Nordic",
+            "playground": "Playground",
+            "connection": "Connection between pistes"
+        }
+    }
+}
